@@ -1,0 +1,279 @@
+body {
+    background-color: #f5f7fb;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navbar */
+
+.navbar {
+    height: 65px;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    min-height: calc(100vh - 65px);
+    background-color: white;
+    border-right: 1px solid #e5e7eb;
+}
+
+
+.sidebar .nav-link {
+    color: #555;
+    padding: 12px 15px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+
+
+.sidebar .nav-link:hover {
+    background-color: #f0f4ff;
+}
+
+
+.sidebar .nav-link.active {
+    background-color: #e8f0ff;
+    color: #0d6efd;
+}
+
+
+.sidebar i {
+    margin-right: 10px;
+}
+
+
+/* Welcome */
+
+.welcome-section h2 {
+    font-weight: 700;
+}
+
+
+/* Cards */
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+.stat-card {
+    transition: transform 0.2s;
+}
+
+
+.stat-card:hover {
+    transform: translateY(-4px);
+}
+
+
+.stat-icon {
+    font-size: 30px;
+    color: #0d6efd;
+}
+
+
+/* Resources */
+
+.resource-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    background-color: #f8f9fa;
+
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+
+.resource-item:hover {
+    background-color: #e8f0ff;
+    color: #0d6efd;
+}
+
+
+/* Dark mode */
+
+.dark-mode {
+    background-color: #181a1b;
+    color: white;
+}
+
+
+.dark-mode .card,
+.dark-mode .navbar,
+.dark-mode .sidebar {
+    background-color: #242628 !important;
+    color: white;
+}
+
+
+.dark-mode .text-muted {
+    color: #aaa !important;
+}
+
+
+.dark-mode .sidebar {
+    border-color: #444;
+}
+
+/* =========================
+   NOTES
+========================= */
+
+.note-card {
+    transition: transform 0.2s,
+                box-shadow 0.2s;
+}
+
+
+.note-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.10);
+}
+
+
+.note-preview {
+    display: -webkit-box;
+
+    -webkit-line-clamp: 5;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+
+    min-height: 120px;
+}
+
+
+.dark-mode .note-card .card-footer {
+    background-color: #242628 !important;
+}
+
+/* =========================
+   SCHEDULE
+========================= */
+
+.schedule-card {
+    transition: 0.2s;
+}
+
+
+.schedule-card:hover {
+    transform: translateY(-3px);
+}
+
+
+.schedule-time {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.schedule-time i {
+    margin-right: 5px;
+}
+
+
+.dark-mode .schedule-card {
+    background-color: #242628;
+}
+
+
+.dark-mode .schedule-card:hover {
+    background-color: #303336;
+}
+
+/* =========================
+   STUDY TIMER
+========================= */
+
+.timer-card {
+    border-radius: 20px;
+}
+
+
+.timer-display {
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin: 30px 0;
+}
+
+
+.timer-card .progress {
+    border-radius: 20px;
+}
+
+
+.timer-card .progress-bar {
+    transition: width 1s linear;
+}
+
+
+@media (max-width: 576px) {
+
+    .timer-display {
+        font-size: 60px;
+    }
+
+}
+
+/* =========================
+   RESOURCE HUB
+========================= */
+
+.resource-card {
+    transition: transform 0.2s,
+                box-shadow 0.2s;
+}
+
+
+.resource-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.10);
+
+}
+
+
+.resource-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.resource-card .card-footer {
+
+    padding-top: 0;
+
+}
+
+
+.dark-mode .resource-card .card-footer {
+
+    background-color: #242628 !important;
+
+}
